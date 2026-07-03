@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ad6c7237.css",
+    "main.js": "./static/js/main.9af3e656.js",
+    "static/js/453.3b391498.chunk.js": "./static/js/453.3b391498.chunk.js",
+    "static/media/bottel_img.png": "./static/media/bottel_img.c81228fe64f6462c7f6b.png",
+    "static/media/fonnts.com-Gibson_Heavy.otf": "./static/media/fonnts.com-Gibson_Heavy.c7f236164123279ac4d9.otf",
+    "static/media/fonnts.com-Gibson_Thin.otf": "./static/media/fonnts.com-Gibson_Thin.1f5758717205a592f582.otf",
+    "static/media/fonnts.com-Gibson_SemiBold.otf": "./static/media/fonnts.com-Gibson_SemiBold.5847fed32dda35a93ec9.otf",
+    "static/media/fonnts.com-Gibson_Regular.otf": "./static/media/fonnts.com-Gibson_Regular.8b86f279367b579f5be0.otf",
+    "static/media/fonnts.com-Gibson_Bold.otf": "./static/media/fonnts.com-Gibson_Bold.c7f8039a17a4709fbdf1.otf",
+    "static/media/fonnts.com-Gibson_Light.otf": "./static/media/fonnts.com-Gibson_Light.2d867832efef69cfea52.otf",
+    "static/media/The_New_York_Times_logo.png": "./static/media/The_New_York_Times_logo.465f3a074f50cb8762de.png",
+    "static/media/NBC_logo.png": "./static/media/NBC_logo.48e20228da6c55f643a7.png",
+    "static/media/fonnts.com-Gibson_Medium.otf": "./static/media/fonnts.com-Gibson_Medium.6a485c28926f82b2b25a.otf",
+    "static/media/fox_logo.png": "./static/media/fox_logo.3f69eca2e26d224bf62e.png",
+    "static/media/Forbes_logo.png": "./static/media/Forbes_logo.1318213d953b12eb4801.png",
+    "static/media/newlogo.png": "./static/media/newlogo.301bba7efc55bd7c5a78.png",
+    "static/media/wsj_logo.png": "./static/media/wsj_logo.4a97045d8ce4d9f47aa3.png",
+    "static/media/visa.svg": "./static/media/visa.8b7a66ceeac0fd0597cf39cf8aa60a11.svg",
+    "static/media/american.svg": "./static/media/american.2d53cbb9c380a23b7633ad163dc83bb4.svg",
+    "index.html": "./index.html",
+    "static/media/master.svg": "./static/media/master.564808b93a317688418a3af1e94b363d.svg",
+    "static/media/jcb.svg": "./static/media/jcb.545a132ddea15690eb6dc9e87e35e1dc.svg",
+    "main.ad6c7237.css.map": "./static/css/main.ad6c7237.css.map",
+    "main.9af3e656.js.map": "./static/js/main.9af3e656.js.map",
+    "453.3b391498.chunk.js.map": "./static/js/453.3b391498.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad6c7237.css",
+    "static/js/main.9af3e656.js"
+  ]
+}
