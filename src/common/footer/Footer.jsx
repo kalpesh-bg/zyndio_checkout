@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
         </div> */}
         <div className="footer-bottom">
-          <p>© Zyndio 2024 All Rights Reserved</p>
+          <p>© ZYNDIO {new Date().getFullYear()} All Rights Reserved</p>
         </div>
       </footer>
     </div>

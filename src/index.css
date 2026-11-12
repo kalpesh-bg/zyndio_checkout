@@ -40,31 +40,47 @@
   src: url(./utils/fonts/gibson/fonnts.com-Gibson_Heavy.otf) format("opentype");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* ZYNDIO brand tokens. Mirrors dna-health/docs/brand.md. */
 :root {
-  --font-base: "Gibson";
-  --clr-yellow: #21aeda;
-  --clr-main: #000000; /* Blue for buttons */
+  --zy-blue: #2563eb;
+  --zy-blue-soft: #eff6ff;
+  --zy-lavender: #a78bfa;
+  --zy-lavender-soft: #f5f3ff;
+  --zy-surface: #fafaf9;
+  --zy-text-strong: #0f172a;
+  --zy-text-muted: #475569;
+  --zy-gradient: linear-gradient(135deg, #2563eb 0%, #a78bfa 100%);
+  --zy-ring: 0 0 0 3px rgba(37, 99, 235, 0.18);
+  --zy-card-shadow: 0 1px 2px rgba(15, 23, 42, 0.04),
+    0 12px 32px -12px rgba(37, 99, 235, 0.18);
+
+  --font-base: "Inter", "Gibson", system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  --font-display: "Bricolage Grotesque", "Inter", "Gibson", system-ui,
+    sans-serif;
+  --clr-yellow: #a78bfa;
+  --clr-main: var(--zy-blue); /* Primary action colour */
   --clr-white: #fff; /* True white */
-  --clr-gray: #333;
+  --clr-gray: #475569;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #111; /* True black for buttons */
-  --clr-black-blue: #1a1a1a;
-  --clr-bg: #fff; /* White background */
-  --clr-text: #111; /* Black font */
-  --clr-text-secondary: #333;
-  --clr-border: #e0e0e0;
-  --clr-input-bg: #fff;
-  --clr-card-bg: #fff;
+  --clr-black: #0f172a; /* Ink, formerly button black */
+  --clr-black-blue: #1e293b;
+  --clr-bg: #ffffff; /* White background */
+  --clr-text: #0f172a; /* Ink */
+  --clr-text-secondary: #475569;
+  --clr-border: #e2e8f0;
+  --clr-input-bg: #ffffff;
+  --clr-card-bg: #ffffff;
   --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  --spacing: 0.04em;
+  --radius: 0.75rem;
+  --light-shadow: 0 5px 15px rgba(37, 99, 235, 0.06);
+  --dark-shadow: 0 12px 32px -12px rgba(15, 23, 42, 0.18);
   --max-width: 1040px;
   --fixed-width: 620px;
 }
@@ -223,6 +239,17 @@ section {
   display: block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  color: var(--clr-text);
+}
+
 ol,
 ul {
   list-style: none;
@@ -358,40 +385,44 @@ button {
 }
 
 .btn {
-  background: var(--clr-black);
+  background: var(--zy-gradient);
   color: var(--clr-white);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius);
-  border: 2px solid var(--clr-black);
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   transition: var(--transition);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
   display: inline-block;
 }
 
 .btn2 {
-  background: var(--clr-black);
+  background: var(--zy-gradient);
   color: var(--clr-white);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius);
-  border: 2px solid var(--clr-black);
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   transition: var(--transition);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
   display: inline-block;
   width: 100%;
 }
 
-.btn:hover {
-  background: var(--clr-white);
-  color: var(--clr-black);
-  border: 2px solid var(--clr-black);
+.btn:hover,
+.btn2:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  color: var(--clr-white);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.28);
 }
 
 .mb-2 {

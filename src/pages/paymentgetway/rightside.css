@@ -24,27 +24,26 @@
   padding: 15px;
   margin-bottom: 10px;
   border: 1px solid var(--clr-border);
-  border-radius: 5px;
+  border-radius: 12px;
   background: var(--clr-input-bg);
   color: var(--clr-text);
 }
 
 .apply-button {
   height: 80%;
-  background-color: var(--clr-main);
+  background: var(--zy-gradient);
   color: #fff;
   padding: 15px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 17px;
-  border: 2px solid var(--clr-main);
+  border: 2px solid transparent;
   cursor: pointer;
   transition: var(--transition);
 }
 .apply-button:hover {
-  background-color: #fff;
-  color: #111;
-  border: 2px solid #111;
+  filter: brightness(1.05);
+  color: #fff;
 }
 
 .form-row {
@@ -60,18 +59,18 @@
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: var(--clr-main);
-  color: var(--clr-black);
-  border: 2px solid var(--clr-main);
-  border-radius: 5px;
+  background: var(--zy-gradient);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .submit-button:hover {
-  background-color: transparent;
-  color: var(--clr-main);
+  filter: brightness(1.05);
+  color: #fff;
 }
 
 /* Right Section (Order Summary) */
@@ -124,19 +123,19 @@
 }
 
 .discount-code-button {
-  background-color: var(--clr-main);
-  color: var(--clr-black);
-  border: 2px solid var(--clr-main);
+  background: var(--zy-gradient);
+  color: #fff;
+  border: 2px solid transparent;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .apply-button:hover,
 .discount-code-button:hover {
-  background-color: transparent;
-  color: var(--clr-main);
+  filter: brightness(1.05);
+  color: #fff;
 }
 
 .order-summary2 {
@@ -200,7 +199,7 @@
   padding: 14px;
   width: 100px;
   border: 1px solid var(--clr-border);
-  border-radius: 5px;
+  border-radius: 16px;
 }
 .item {
   display: flex;
@@ -314,10 +313,11 @@
 .total-section {
   background: var(--clr-card-bg);
   border: 1px solid var(--clr-border);
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 15px;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: var(--zy-card-shadow);
 }
 
 .total-section:hover {

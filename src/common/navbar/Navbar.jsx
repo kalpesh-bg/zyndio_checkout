@@ -108,8 +108,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-signin">
         <a
-          href="member.vitalmedsrx.com/"
+          href="https://member.zyndio.com/"
           target="_blank"
+          rel="noreferrer"
           className="product-button"
         >
           Sign In
