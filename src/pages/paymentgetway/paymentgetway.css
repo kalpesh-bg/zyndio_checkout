@@ -76,8 +76,9 @@
   width: 50%;
   background: var(--clr-card-bg);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 24px;
   margin: 10px 0;
+  box-shadow: var(--zy-card-shadow);
   /* border: 1px solid var(--clr-border); */
   /* border-right: 0.1px solid #cacacabb; */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -93,7 +94,7 @@
   gap: 15px;
   align-items: center;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /* Form Group Styles */
@@ -127,7 +128,7 @@ select {
   padding: 14px 20px;
   /* background-color: rgba(128, 128, 128, 0.09); */
   border: 1px solid var(--clr-border);
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 300;
   -webkit-appearance: none;
@@ -151,24 +152,26 @@ input::placeholder {
 
 /* Button Styles */
 .btn-checkout {
-  background-color: var(--clr-main);
-  color: var(--clr-black);
+  background: var(--zy-gradient);
+  color: var(--clr-white);
   margin-top: 15px;
   padding: 10px 20px;
-  border: 3px solid var(--clr-main);
+  border: 3px solid transparent;
   border-radius: 2rem;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: var(--transition);
   /* letter-spacing: 1px; */
   text-align: center;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
 }
 
 .btn-checkout:hover {
   /* border: 1px solid var(--clr-yellow);/ */
-  background-color: transparent;
-  color: var(--clr-main);
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  color: var(--clr-white);
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -323,7 +326,7 @@ label {
 .payment_card {
   background: var(--clr-card-bg);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--clr-border);
   margin-bottom: 20px;
 }
@@ -344,14 +347,14 @@ label {
 .details-card {
   background: var(--clr-card-bg);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--clr-border);
 }
 
 .order-summary {
   background: var(--clr-card-bg);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid var(--clr-border);
   width: 40%;
   height: fit-content;
@@ -451,7 +454,7 @@ label {
 .sec2_checkout_box_wrapp {
   background: var(--clr-card-bg);
   border: 1px solid var(--clr-border);
-  border-radius: 5px;
+  border-radius: 16px;
   padding: 10px;
   margin-bottom: 20px;
 }
